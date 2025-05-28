@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F6FA">
+
+    <!-- Barre supérieure -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#4CAF50"
+        android:gravity="center_vertical"
+        android:elevation="4dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Marquer une absence"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:gravity="center"
+            android:padding="12dp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="18dp"
+            app:cardElevation="6dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- Groupe -->
+                <TextView
+                    android:text="Groupe"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"/>
+
+                <AutoCompleteTextView
+                    android:id="@+id/group"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="Choisir un groupe"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/input_border"
+                    android:padding="10dp"
+                    android:textColorHint="#888"/>
+
+                <!-- Site -->
+                <TextView
+                    android:text="Site"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"/>
+
+                <AutoCompleteTextView
+                    android:id="@+id/site"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="Choisir un site"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/input_border"
+                    android:padding="10dp"
+                    android:textColorHint="#888"/>
+
+                <!-- Date -->
+                <TextView
+                    android:text="Date de session"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/input_border"
+                    android:layout_marginBottom="16dp"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/selectedDateTextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Aucune date"
+                        android:textSize="16sp"/>
+
+                    <ImageButton
+                        android:id="@+id/dateButton"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:src="@android:drawable/ic_menu_my_calendar"
+                        android:contentDescription="Choisir une date"
+                        app:tint="#4CAF50"/>
+                </LinearLayout>
+
+                <!-- Nom étudiant -->
+                <TextView
+                    android:text="Nom de l'étudiant"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"/>
+
+                <EditText
+                    android:id="@+id/studentNameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="Entrez le nom"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/input_border"
+                    android:padding="10dp"
+                    android:textColorHint="#888"/>
+
+                <!-- Remarques -->
+                <TextView
+                    android:text="Remarques"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"/>
+
+                <EditText
+                    android:id="@+id/remarksEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:hint="Ajouter des remarques"
+                    android:background="@drawable/input_border"
+                    android:padding="10dp"
+                    android:gravity="top"
+                    android:textColorHint="#888"
+                    android:layout_marginBottom="16dp"/>
+
+                <Button
+                    android:id="@+id/saveButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="Enregistrer"
+                    android:backgroundTint="#4CAF50"
+                    android:textColor="#FFF"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+</LinearLayout>

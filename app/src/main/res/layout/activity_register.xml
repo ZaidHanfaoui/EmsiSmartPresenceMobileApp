@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- Logo -->
+
+    <!-- Texte de Signup -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="356dp"
+        android:layout_height="207dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo_emsi" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Sign Up"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Champ Nom -->
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Nom"
+        android:padding="10dp"
+        android:background="@drawable/input_background"
+        android:inputType="textPersonName"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Champ Email -->
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Email"
+        android:padding="10dp"
+        android:background="@drawable/input_background"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Champ Mot de passe -->
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/input_background"
+        android:hint="Mot de passe"
+        android:inputType="textPassword"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/conf_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/input_background"
+        android:hint="Confirmation de Mot de passe"
+        android:inputType="textPassword"
+        android:padding="10dp" />
+
+    <!-- Bouton d'inscription -->
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/green"
+        android:text="S'inscrire"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <!-- Lien de connexion -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Already have an account? Login"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+</LinearLayout>

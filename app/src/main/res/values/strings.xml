@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Emsi SmartPresence</string>
+    <string name="text">Welcome</string>
+    <string name="logo_user">Mr/Ms</string>
+    <string name="title_activity_maps">MAP</string>
+
+</resources>
