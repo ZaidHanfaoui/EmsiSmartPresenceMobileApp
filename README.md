@@ -24,7 +24,7 @@ L’application vise à remplacer les feuilles de présence papier par une solut
 ---
 
 ## 🛠️ Technologies utilisées
-- **Frontend Mobile** : Android (Java/Kotlin) 
+- **Frontend Mobile** : Android (Java/Gradle) 
 - **Backend** :  Firebase
 - **Base de données** : Firebase Firestore
 - **Authentification** : Firebase Auth 
